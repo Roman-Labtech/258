@@ -27,8 +27,8 @@
         http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
      -->
 
-    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
-    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.material.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.material.colors.min.css">
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -71,7 +71,54 @@
                     <!-- Scrollable page content -->
                     <div class="page-content">
                         <div class="content-block">
-                            <p>Page content goes here</p>
+                            <p>Page content goes here
+                            <form name=MyForm>       
+  <div class="list-block">
+   <br>
+  
+  	<div class="row">
+    <!-- Each "cell" has col-[widht in percents] class -->
+    <div class="col-33"></div>
+    <div class="col-33">
+    <input name=stopwatch size=20 value="00:00:00" class="redcolor sekund-style center">
+    </div>
+    <div class="col-33"></div>
+</div>
+	
+	  <br>
+	<div class="row buttonstyle">
+    <!-- Each "cell" has col-[widht in percents] class -->
+    <div class="col-50">
+        
+      	<img  id="change"  name="change" src="/img/pic1.png" onclick="swapImage();StartStop()" />
+     <input type=button value="Запуск/Остановить" onclick="StartStop()" class="button button-big button-fill color-green">
+   </div>
+    <div class="col-50">
+    <img  id="change1" name="change1" src="/img/pic1.png" onclick="swapImage1();ClearСlock()" />
+    <!--	<img  id="change2" name="change2" src="/img/pic3.png" onclick="swapImage1();ClearСlock()" />-->
+     <input type=button value="Обнулить" onclick="ClearСlock()" class="button button-big button-fill color-red">
+	 
+     
+    </div>
+    </div>  
+       <br>
+      
+	<input name=stopwatch2x><br>	
+	<input name="stopwatch3x"><br>
+	<input name="stopwatch4x"><br>
+	<input name="stopwatch5x"><br>
+	
+	
+  
+  Конечный результат 
+  <input name="resultpole" class="redcolor sekund-style center"> сСтокс<br>
+  
+</div>  
+		
+</form>
+                            
+                            
+                            </p>
                             <!-- Link to another page -->
                             <a href="about.html">About app</a>
                         </div>
